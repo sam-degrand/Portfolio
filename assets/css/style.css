@@ -1,0 +1,153 @@
+root{
+    --var:
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display:flex;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #fff;
+    color:black;
+    box-shadow:
+    0 0 5px 5px #fff
+  }
+p {
+    font-size: 20px;
+}
+
+.picture {
+    height: 400px;
+    width: 30%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-image: "images\Sam Photo.png";
+    background-position: center;
+    border-radius: 45%;
+    height:auto;
+}
+
+.about-me {
+    margin-bottom: 20px;
+    padding: 30px;
+    height: auto;
+    min-height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+.portfolio {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: auto;
+    min-height:300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: auto;
+    min-height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #555454;
+    color: #ffffff;
+}
+
+.resume{
+    margin-bottom: 20px;
+    padding: 20px;
+    height: auto;
+    min-height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+.about-me img {
+    max-height: 200px;
+}
+
+.porfolio img {
+    max-height: 200px;
+}
+
+.contact-info img {
+    max-height: 200px;
+}
+
+.resume img {
+    max-height: 200px;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    font-size: 10px;
+    float: center;
+  }
+ .h1 {
+    font-size: 10px;
+  }
+}
+.port-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    height: auto;
+  }
+  
+  .port-gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
