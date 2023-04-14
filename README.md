@@ -3,7 +3,7 @@
 ## User Story
 
 ```
-AS A POTENTIAL CANDIDENT
+AS A POTENTIAL CANDIDATE
 I WANT to show a potential employer a deployed portfolio of work samples
 SO THAT I can preview samples of my work and to show why I am a good candidate for the open position
 ```
