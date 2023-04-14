@@ -1,6 +1,4 @@
-root{
-    --var:
-}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,13 +12,14 @@ body {
 .header {
     padding: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    
 }
 
 .header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 45px;
 }
 
 .header nav {
@@ -30,40 +29,57 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     display:flex;
+    color: #000000;
+    background-color: #7e7b7b;
 }
 
 .header nav ul {
     list-style-type: none;
+    color: #000000
 }
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 5px;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
+/*Gives glowing effect for clickable options*/
 a:hover {
-    background-color: #fff;
+    background-color: #e2c4c4;
     color:black;
     box-shadow:
-    0 0 5px 5px #fff
+    0 0 5px 5px #e2c4c4;
   }
 p {
     font-size: 20px;
 }
-
+/*positions the headshot into center of page*/
+figure{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    min-width: 200px;
+}
+/*Styles the headshot*/
 .picture {
-    height: 400px;
+    height: 300px;
     width: 30%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-image: "images\Sam Photo.png";
-    background-position: center;
+    background-position: right;
     border-radius: 45%;
     height:auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .about-me {
@@ -74,6 +90,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #000000;
     color: #ffffff;
+    font-size: larger;
 
 }
 
@@ -81,15 +98,16 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: auto;
-    min-height:300px;
+    min-height:200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #000000;
     color: #ffffff;
+    font-size: 50px;
 }
 
 .contact-info {
-    margin-bottom: 20px;
-    padding: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
     height: auto;
     min-height: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -103,34 +121,10 @@ p {
     height: auto;
     min-height: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #000000;
+    background-color: #555454;
     color: #ffffff;
 }
-.about-me img {
-    max-height: 200px;
-}
-
-.porfolio img {
-    max-height: 200px;
-}
-
-.contact-info img {
-    max-height: 200px;
-}
-
-.resume img {
-    max-height: 200px;
-}
-@media screen and (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    font-size: 10px;
-    float: center;
-  }
- .h1 {
-    font-size: 10px;
-  }
-}
+/*changes the orientation of the porfolio when screen size changes*/
 .port-gallery {
     display: flex;
     flex-direction: row;
@@ -142,12 +136,24 @@ p {
     margin: 0 auto;
     padding: 20px 10px;
     height: auto;
+    font-size: 30px;
+    color: #fff;
+    background-color: #000000;
   }
-  
+  /*styles the images in the portfolio gallery*/
   .port-gallery img {
     width: 100%;
     max-width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+  }
+  /*Gives gallery images a glow and enlargens the image upon hovering*/
+.port-gallery img:hover {
+    background-color: #fff;
+    color:black;
+    box-shadow:
+    0 0 5px 5px #fff;
+    max-width: 225px;
+    height: 225px;
   }
