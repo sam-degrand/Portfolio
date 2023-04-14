@@ -23,4 +23,4 @@ THEN They are taken to that deployed application
 WHEN They resize the page or view the site on various screens and devices
 THEN They presented with a responsive layout that adapts to the viewport
 ```
-<img src="images\Sam Portfolio.png" alt="Picture of the website">
+<img src="assets\images\Sam Portfolio.png" alt="Picture of the website">
